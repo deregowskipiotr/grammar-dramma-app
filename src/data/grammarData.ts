@@ -421,10 +421,16 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
             example: 'Never have I ever seen traffic this bad on a Friday afternoon.',
           },
           {
+            context: 'Legal Directives & Academic Writing',
+            description: 'Emphasizing strict regulations, fundamental principles, or solemn observations in official documents.',
+            register: 'Formal',
+            example: 'Under no circumstances should confidential patient records be disclosed without explicit authorization.',
+          },
+          {
             context: 'Executive Presentations & Reports',
             description: 'Emphasizing outstanding achievements or strict operational rules in business.',
             register: 'Workplace',
-            example: 'Not only did we meet our sales target, but we also cut operating costs by 15%.',
+            example: 'Not only did we meet our sales target, but we also cut operating costs by 15%',
           },
         ],
         nativeTraps: [
