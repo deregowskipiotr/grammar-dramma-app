@@ -174,6 +174,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
             register: 'Casual',
             example: 'If I had saved money, I would be stress-free today.',
           },
+          {
+            context: 'Project Retrospectives',
+            description: 'Explaining how past decisions impact current business operations.',
+            register: 'Workplace',
+            example: 'If we had invested in automated testing last quarter, our deployment pipeline would be much faster now.',
+          },
         ],
         nativeTraps: [
           {
@@ -251,6 +257,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
         ],
         usageScenarios: [
           {
+            context: 'Relaying Daily Updates',
+            description: 'Sharing what a friend or colleague mentioned earlier in the day.',
+            register: 'Casual',
+            example: 'Sarah said she was running late because traffic was terrible.',
+          },
+          {
             context: 'Meeting Summaries',
             description: 'Relaying client feedback or colleague comments.',
             register: 'Workplace',
@@ -314,6 +326,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
           },
         ],
         usageScenarios: [
+          {
+            context: 'Informal Inquiries',
+            description: 'Asking friends or peers for information without being too direct.',
+            register: 'Casual',
+            example: 'Do you know if the coffee shop is open on Sundays?',
+          },
           {
             context: 'Polite Inquiries',
             description: 'Formulating polite or business-appropriate questions.',
@@ -397,10 +415,16 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
         ],
         usageScenarios: [
           {
-            context: 'Keynote Speeches & Essays',
-            description: 'Adding stylistic impact to formal presentations or writing.',
-            register: 'Formal',
-            example: 'Rarely do we encounter such dedication in project development.',
+            context: 'Expressing Strong Disbelief or Surprise',
+            description: 'Emphasizing an unusual event or strict rule in everyday conversations.',
+            register: 'Casual',
+            example: 'Never have I ever seen traffic this bad on a Friday afternoon.',
+          },
+          {
+            context: 'Executive Presentations & Reports',
+            description: 'Emphasizing outstanding achievements or strict operational rules in business.',
+            register: 'Workplace',
+            example: 'Not only did we meet our sales target, but we also cut operating costs by 15%.',
           },
         ],
         nativeTraps: [
@@ -479,6 +503,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
             register: 'Formal',
             example: 'It is widely understood that regulations will tighten.',
           },
+          {
+            context: 'Strategic Planning & Market Analysis',
+            description: 'Discussing industry trends, market rumors, or general consensus without naming specific sources.',
+            register: 'Workplace',
+            example: 'The competitor is reported to be planning a major product launch next quarter.',
+          },
         ],
         nativeTraps: [
           {
@@ -537,6 +567,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
           },
         ],
         usageScenarios: [
+          {
+            context: 'Personal Services & Everyday Chores',
+            description: 'Talking about delegating home repairs, maintenance, or personal tasks.',
+            register: 'Casual',
+            example: 'I need to get someone to take a look at my washing machine this weekend.',
+          },
           {
             context: 'Outsourcing & Delegating',
             description: 'Describing professional services arranged with third parties.',
@@ -619,6 +655,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
           },
         ],
         usageScenarios: [
+          {
+            context: 'Everyday Conversations & Storytelling',
+            description: 'Expressing contrast or unexpected outcomes when sharing personal experiences.',
+            register: 'Casual',
+            example: 'Despite the terrible weather, we had a fantastic time at the outdoor concert.',
+          },
           {
             context: 'Argumentation & Debates',
             description: 'Balancing pros and cons in professional reports.',
