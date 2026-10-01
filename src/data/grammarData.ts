@@ -263,6 +263,12 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
             example: 'Sarah said she was running late because traffic was terrible.',
           },
           {
+            context: 'Official Press Statements & Board Minutes',
+            description: 'Formally documenting statements made by executives or public officials.',
+            register: 'Formal',
+            example: 'The Chief Executive Officer confirmed that the board had approved the annual compliance budget.',
+          },
+          {
             context: 'Meeting Summaries',
             description: 'Relaying client feedback or colleague comments.',
             register: 'Workplace',
@@ -668,10 +674,16 @@ export const GRAMMAR_DOMAINS: GrammarDomain[] = [
             example: 'Despite the terrible weather, we had a fantastic time at the outdoor concert.',
           },
           {
+            context: 'Academic Writing & Policy Reports',
+            description: 'Acknowledging opposing evidence or limitations in formal documentation.',
+            register: 'Formal',
+            example: 'Notwithstanding the lack of historical data, the committee recommended proceeding with the proposed policy changes.',
+          },
+          {
             context: 'Argumentation & Debates',
             description: 'Balancing pros and cons in professional reports.',
             register: 'Workplace',
-            example: 'Notwithstanding the initial budget deficit, the product launched on time.',
+            example: 'We achieved strong quarterly revenue growth, albeit at slightly lower profit margins.',
           },
         ],
         nativeTraps: [
