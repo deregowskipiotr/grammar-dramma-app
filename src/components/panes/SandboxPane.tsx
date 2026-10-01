@@ -65,7 +65,7 @@ function ChallengeCard({ challenge }: { challenge: SandboxChallenge }) {
 
       {/* Input area */}
       <div className="p-4 flex flex-col gap-3">
-        <div className="flex gap-2">
+        <div className="flex items-center gap-2">
           <input
             ref={inputRef}
             value={input}
@@ -77,7 +77,7 @@ function ChallengeCard({ challenge }: { challenge: SandboxChallenge }) {
             disabled={status === 'correct'}
             placeholder="Type your answer here..."
             className={clsx(
-              'flex-1 px-3 py-2 rounded-md text-sm font-sans bg-white/5 border',
+              'flex-1 min-w-0 px-3 py-2 rounded-md text-sm font-sans bg-white/5 border',
               'text-second placeholder:text-second/25',
               'focus:outline-none transition-colors duration-200',
               status === 'correct'
@@ -91,7 +91,7 @@ function ChallengeCard({ challenge }: { challenge: SandboxChallenge }) {
           {status === 'correct' ? (
             <button
               onClick={handleReset}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-md bg-white/8 border border-white/15 text-second/60 text-sm font-sans hover:border-white/25 hover:text-second/80 transition-colors duration-200"
+              className="shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-md bg-white/8 border border-white/15 text-second/60 text-sm font-sans hover:border-white/25 hover:text-second/80 transition-colors duration-200"
               title="Reset challenge"
             >
               <RotateCcw size={14} />
@@ -101,13 +101,13 @@ function ChallengeCard({ challenge }: { challenge: SandboxChallenge }) {
               onClick={handleSubmit}
               disabled={!input.trim()}
               className={clsx(
-                'flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-sans border transition-colors duration-200',
+                'shrink-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-sm font-sans border transition-colors duration-200',
                 'disabled:opacity-30 disabled:cursor-not-allowed',
                 'bg-decor/15 border-decor/30 text-decor hover:bg-decor/22 hover:border-decor/50'
               )}
             >
               <Send size={14} />
-              <span className="hidden sm:inline">Check</span>
+              <span>Check</span>
             </button>
           )}
         </div>
